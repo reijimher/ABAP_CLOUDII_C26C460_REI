@@ -25,6 +25,7 @@ class zcl_lab_05_flight_rei implementation.
                  into @data(lv_valor).
 
 *-Se utiliza la FM xsdbool para convertir una expresión lógica (TRUE/FALSE) a un valor de tipo abap_boo
+
     rv_abap_bool = xsdbool( sy-subrc = 0 ).
 
   endmethod.
