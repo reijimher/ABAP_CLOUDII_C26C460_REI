@@ -3,13 +3,16 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_EXEC_RESULT</CLSNAME>
+    <CLSNAME>ZCL_56_TEST_REI</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Result Class</DESCRIPT>
+    <DESCRIPT>Class Tst</DESCRIPT>
+    <CATEGORY>05</CATEGORY>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
+    <DURATION_TYPE>12</DURATION_TYPE>
+    <RISK_LEVEL>11</RISK_LEVEL>
    </VSEOCLASS>
   </asx:values>
  </asx:abap>
