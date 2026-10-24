@@ -18,16 +18,40 @@ class zcl_execution_rei implementation.
   method if_oo_adt_classrun~main.
 
 
-data(lo_linux) = new ZCL_LAB_12_LINUX(  ).
-data lv_system_type type string.
+*-3. Redefinición de métodos
 
-lo_linux->get_architecture(
-  importing
-    ev_architecture = lv_system_type
-).
+data(lo_add_price) = new zcl_lab_15_flight_price_rei( ).
+
+select fROM /dmo/flight
+         fields *
+         where carrier_id eq 'AA'
+         into table @data(ls_flihts).
+
+*lo_add_price->add_price( is_flights = ls_flihts ).
 
 
-out->write( |System type: { lv_system_type }| ).
+
+
+**-2. Constructores con herencia
+*
+*    data(lo_grid) = new zcl_lab_14_grid_rei( iv_view_type = 'American-style boxes'
+*                                             iv_box       = '34,50 x 22,50 x 31,00 cm' ).
+*
+*
+*    out->write( |Box dimensions:{ lo_grid->gv_out_box }   ************   Type:{ lo_grid->gv_out_vie_type } | ).
+
+
+*1. Herencia
+*data(lo_linux) = new ZCL_LAB_12_LINUX(  ).
+*data lv_system_type type string.
+*
+*lo_linux->get_architecture(
+*  importing
+*    ev_architecture = lv_system_type
+*).
+*
+*
+*out->write( |System type: { lv_system_type }| ).
 
 
 

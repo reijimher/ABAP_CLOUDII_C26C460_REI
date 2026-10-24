@@ -17,6 +17,7 @@ endclass.
 
 
 class zcl_lab_11_system_rei implementation.
+
   method get_architecture.
     ev_architeture = me->architecture.
   endmethod.
